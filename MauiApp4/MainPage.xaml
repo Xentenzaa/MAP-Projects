@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage">
+
+    <ScrollView>
+        <Grid Padding="20" RowSpacing="10" RowDefinitions="Auto, Auto, *">
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Grid.Row="0">
+
+                <Label Text="Vertical" VerticalOptions="Center"></Label>
+                <Button Text="Start" Clicked="OnVerticalStart"> </Button>
+                <Button Text="Center" Clicked="OnVerticalCenter"></Button>
+                <Button Text="End" Clicked="OnVerticalEnd"></Button>
+                
+            </HorizontalStackLayout>            
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Grid.Row="1">
+
+                <Label Text="Horizontal" VerticalOptions="Center"></Label>
+                <Button Text="Start" Clicked="OnHorizontalStart"></Button>
+                <Button Text="Center" Clicked="OnHorizontalCenter"></Button>
+                <Button Text="End" Clicked="OnHorizontalEnd"></Button>
+                
+            </HorizontalStackLayout>
+
+            <Grid Grid.Row="2">
+                <Image WidthRequest="120" HeightRequest="120" x:Name="target" Source="https://static.wikia.nocookie.net/fictionalcrossover/images/0/0a/Among_Us_Crewmate.webp/revision/latest/scale-to-width-down/447?cb=20220923161759" />
+            </Grid>
+
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>
